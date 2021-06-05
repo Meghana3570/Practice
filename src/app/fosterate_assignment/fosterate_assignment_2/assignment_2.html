@@ -1,0 +1,202 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/f65f000045.js" crossorigin="anonymous"></script>
+<style>
+* {
+  box-sizing: border-box;
+  
+}
+
+
+.column {
+  float: left;
+  width:50%;
+  padding: 10px;
+  
+}
+.input-label
+{
+    margin-top: 10px;
+}
+
+#name,#email,#pw
+{
+    border:20px;
+    border-color: turquoise;
+    width:200px;
+    margin:5px;
+    
+}
+
+#name,#email
+{
+    margin-left: 100px;
+}
+
+#pw
+{
+    margin-left: 74px;
+}
+
+.btn
+{
+    margin-left: 35%;
+    margin-top:20px;
+    background-color: yellow;
+}
+
+#fsqr
+{
+    color:blue;
+    font-size: 2em;
+    margin-left: 100px;
+}
+
+#gog
+{
+    color:red;
+    font-size: 2em;
+    margin-left: 100px;
+}
+
+#tsqr
+{
+    color:blue;
+    font-size: 2em;
+    margin-left: 100px;
+}
+
+#lin
+{
+    color:blue;
+    font-size: 2em;
+    margin-left: 100px;
+}
+
+label
+{
+  font-size: 18px;  
+}
+
+#slideshow {
+  overflow:hidden;
+  height: 510px;
+  width: 728px;
+  margin: 0 auto;
+}
+
+.slide {
+  float: left;
+  height: 510px;
+  width: 728px;
+}
+ 
+.slide-wrapper {
+  width: calc(728px * 4);
+  animation: slide 10s ease infinite;
+}
+
+@keyframes slide {
+  20% {
+    margin-left: 0px;
+  }
+ 
+  40% {
+    margin-left: calc(-728px * 1);
+  }
+ 
+  60% {
+    margin-left: calc(-728px * 2);
+  }
+ 
+  80% {
+    margin-left: calc(-728px * 3);
+  }
+}
+
+</style>
+</head>
+<body>
+
+<h1 style="text-align: center;">Fosterate Login Form</h1>
+
+<div class="form">
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <img src="https://www.bing.com/th?id=OIP.OYPx8R5WlCdodXfjZzU8PQHaFj&w=142&h=106&c=8&rs=1&qlt=90&dpr=1.25&pid=3.1&rm=2" alt="" width=100vw>
+    <h2>Sign up and get started.</h2><br>
+
+
+    <div class="input-label">
+        <label class="i" for="name" >Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name here...">
+    </div> 
+
+    <div class="input-label">
+        <label class="i" for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your mail here...">
+    </div> 
+    <div class="input-label">
+        <label class="i" for="pw">Password</label>
+        <input type="password" name="pw" id="pw" placeholder="Please enter your password.">
+    </div> <br><br>
+    <div class="input-label">
+        <input type="checkbox" name="cb" id="cb">
+        <label for="#cb">Yes, I want to receive news and updates from
+            Fosterate.</label>
+
+        
+    </div>
+
+    <div class="input-label">
+        <input type="checkbox" name="cb" id="cb2">
+        <label for="#cb2">By signing up, you agree to Fosterate’s <a href="#r1"> Privacy
+            Policy</a> and <a href="#r2">Terms of Use</a> .</label>
+        
+        
+    </div><br>
+
+    <button class="btn">Create Account</button><br>
+
+    <h3>Sign up using:</h3>
+    <i class="fa fa-facebook-square" aria-hidden="true" id="fsqr"></i>
+    <i class="fa fa-google" aria-hidden="true" id="gog"></i>
+    <i class="fa fa-twitter-square" aria-hidden="true" id="tsqr"></i>
+    <i class="fa fa-linkedin" aria-hidden="true" id="lin"></i>
+ </div>
+</div>
+  <div class="column">
+    <h2>Column 2</h2>
+    <h1>IMAGE SLIDESHOW</h1>
+    <div id="slideshow">
+    <div class="slide-wrapper">
+      <div class="slide">
+        <h1 class="slide-number">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxWPA0bLvRLyIEVJRem3iJ3Ik5yv9YUyeo9A&usqp=CAU">
+        </h1>
+      </div>
+      <div class="slide">
+        <h1 class="slide-number">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr60H8Pp-mI3s-YbV43eFn-sM7vkxzaZCSuw&usqp=CAU">
+        </h1>
+      </div>
+      <div class="slide">
+        <h1 class="slide-number">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGDkNHwbJRMJoAug_9L-OzUdy5t3DcXWpXzg&usqp=CAU">
+        </h1>
+      </div>
+      <div class="slide">
+        <h1 class="slide-number">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD9BwaN-pzQEjc2e-AOPz0YUOssMierVD8IA&usqp=CAU">
+        </h1>
+      </div>
+    </div>
+  </div> 
+
+  </div>
+  
+</div>
+
+</body>
+</html>

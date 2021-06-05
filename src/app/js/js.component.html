@@ -1,0 +1,23 @@
+<div class="dropdown">
+  <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" data-target="content">Search By</button>
+      <div class="dropdown-menu " id="content">
+          <a (click)="test('userId')" class="dropdown-item" >userId</a>
+          <a (click)="test('id')" class="dropdown-item" >id</a>
+          <a (click)="test('title')" class="dropdown-item" >title</a>
+      </div>
+</div>
+<input type="text" name="searchterm" id="" class="form-control" placeholder="Search by {{find}}" [(ngModel)]="searchTerm">
+  <table class="table table-bordered">
+    <thead>
+      <th>UserId</th>
+      <th>Id</th>
+      <th>Title</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let obj of data |search:find:searchTerm">
+        <td>{{obj.userId}}</td>
+        <td>{{obj.id}}</td>
+        <td>{{obj.title}}</td>
+      </tr>
+    </tbody>
+  </table>
